@@ -4,7 +4,7 @@ import 'models/quiz_model.dart';
 import 'screens/splash_screen.dart';
 import 'screens/home_screen.dart';
 import 'screens/quiz_screen.dart';
-
+  
 void main() {
   runApp(const QuizApp());
 }
