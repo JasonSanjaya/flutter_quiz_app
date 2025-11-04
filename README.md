@@ -18,6 +18,14 @@ Adapun tujuan dari aplikasi ini adalah sebagai media latihan pemahaman materi te
 </p>
 
 ## Screenshot Aplikasi 
+<p align="center">
+  <img src="assets/images/screenshot1.jpg" width="350">
+  <img src="assets/images/screenshot2.jpg" width="350">
+  <img src="assets/images/screenshot3.jpg" width="350">
+  <img src="assets/images/screenshot4.jpg" width="350">
+  <img src="assets/images/screenshot5.jpg" width="350">
+  <img src="assets/images/screenshot6.jpg" width="350">
+</p>
 
 ## Link Mockup/Prototype Aplikasi
 https://www.figma.com/design/FfiZ4Senx0524w4mzijeM5/Lab-PM?m=auto&t=BdjGs8a58Ew1wV3j-6
