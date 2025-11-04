@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_quiz_app/screens/home_screen.dart';
 
-class SplashScreen extends StatefulWidget {
+class SplashScreen extends StatefulWidget {//stateful karena ada proses waktu tunggu 
   static const routeName = '/splash';
   const SplashScreen({super.key});
 
@@ -11,7 +11,7 @@ class SplashScreen extends StatefulWidget {
 
 class _SplashScreenState extends State<SplashScreen> {
   @override
-  void initState() {
+  void initState() {//dipanggil saat halaman baru dibuka 
     super.initState();
 
     // Tunggu 3 detik, lalu pindah halaman
@@ -21,7 +21,7 @@ class _SplashScreenState extends State<SplashScreen> {
         context,
         MaterialPageRoute(
             builder: (_) =>
-                const HomeScreen()), // ganti ke halaman yang kamu mau
+                const HomeScreen()), // ganti ke halaman homescreen
       );
     });
   }
@@ -43,14 +43,13 @@ class _SplashScreenState extends State<SplashScreen> {
                 return Text('Error loading image: $error');
               },
             ),
-            const SizedBox(height: 20),
             const Text(
               "QuizKu",
               style: TextStyle(
                   fontSize: 24,
                   fontWeight: FontWeight.bold,
-                  color: Color.fromARGB(255, 107, 122, 208)),
-            )
+                  color: Color(0xFF506DB8)),
+            ),
           ],
         ),
       ),

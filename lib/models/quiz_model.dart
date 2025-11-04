@@ -4,10 +4,10 @@ import '../data/questions.dart';
 class QuizModel extends ChangeNotifier {
   String userName = '';
   int currentIndex = 0;
-  final Map<int, int> answers = {}; // questionIndex -> selectedOptionIndex
+  final Map<int, int> answers = {}; // no pertanyaan, index jawaban
 
-  List<Question> get questions => sampleQuestions;
-  int get total => questions.length;
+  List<Question> get questions => sampleQuestions;// untuk ambil pertanyaan 
+  int get total => questions.length;//total pertanyaan 
 
   void setName(String name) {
     userName = name;
@@ -35,14 +35,14 @@ class QuizModel extends ChangeNotifier {
 
   int calculateScore() {
     int score = 0;
-    for (int i = 0; i < questions.length; i++) {
+    for (int i = 0; i < questions.length; i++) { // loop pertanyaan sampe akhir 
       final q = questions[i];
-      final selected = answers[i];
+      final selected = answers[i];// jawaban user 
       if (selected != null && q.correctIndex == selected) score++;
     }
     return score;
   }
-
+  
   void reset() {
     userName = '';
     currentIndex = 0;

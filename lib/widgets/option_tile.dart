@@ -17,7 +17,7 @@ class OptionTile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final w = MediaQuery.of(context).size.width;
-    return InkWell(
+    return InkWell(// untuk pinggir opsi
       onTap: onTap,
       borderRadius: BorderRadius.circular(12),
       child: Container(
@@ -29,7 +29,7 @@ class OptionTile extends StatelessWidget {
         ),
         child: Row(
           children: [
-            CircleAvatar(
+            CircleAvatar(//untuk nomor opsi
               radius: w * 0.04,
               backgroundColor: isSelected ? Theme.of(context).primaryColor : Colors.transparent,
               child: Text('${index + 1}', style: TextStyle(color: isSelected ? Colors.white : Colors.black)),

@@ -8,15 +8,20 @@ class PrimaryButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final width = MediaQuery.of(context).size.width;
+    final mediaQuery = MediaQuery.of(context);
+    final width = mediaQuery.size.width;
+
     return SizedBox(
       height: width * 0.12,
       child: ElevatedButton(
         onPressed: onPressed,
         style: ElevatedButton.styleFrom(
-          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
+          shape:
+              RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
         ),
-        child: Text(text, style: const TextStyle(fontWeight: FontWeight.w600)),
+        child: Text(text,
+            style: const TextStyle(
+                fontWeight: FontWeight.w600, color: Color(0xFF506DB8))),
       ),
     );
   }
